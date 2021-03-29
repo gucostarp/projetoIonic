@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle> <ion-icon name='menu'></ion-icon>
+    </button> 
+    <ion-title>Gustavo Costa</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      Selecione um item
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-instagram" item-start (click)="showToast('Você clicou em Instagram')"></ion-icon>
+      Instagram
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-youtube" item-start (click)="showToast('Você clicou em Youtube')"></ion-icon>
+      Youtube
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-facebook" item-start (click)="showToast('Você clicou em Facebook')"></ion-icon>
+      Facebook
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-linkedin" item-start (click)="showToast('Você clicou em LinkedIn')"></ion-icon>
+      LinkedIn
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-twitter" item-start (click)="showToast('Você clicou em Twitter')"></ion-icon>
+      Twitter
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="mostrarComponente()">Mostrar ações</button>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="secondary">
+    <ion-title size="small">Centro Universitário Claretiano</ion-title>
+</ion-toolbar>
+</ion-footer>
