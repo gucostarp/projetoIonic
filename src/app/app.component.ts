@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
+import { LoginPage } from '../pages/login/login';
 import { BadgesPage } from '../pages/badges/badges';
 @Component({
  templateUrl: 'app.html'
@@ -24,6 +25,7 @@ SplashScreen) {
 
  { title: 'Home', component: HomePage },
  { title: 'Cadastro', component: CadastroPage },
+ { title: 'Login', component: LoginPage },
  { title: 'Badges', component: BadgesPage },
 
  ];

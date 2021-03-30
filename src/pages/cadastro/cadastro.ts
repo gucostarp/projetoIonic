@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EmailValidator } from '@angular/forms';
+// import { EmailValidator } from '@angular/forms';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
@@ -15,6 +15,9 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
   templateUrl: 'cadastro.html',
 })
 export class CadastroPage {
+
+  mail: string = '';
+  fone: string = '';
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
@@ -46,13 +49,14 @@ export class CadastroPage {
         {
           text: 'Salvar',
           handler: data => {
-            console.log('Saved clicked');
+            this.mail = 'Email:' + data.email;
+            this.fone = 'Fone:' + data.telefone;
+            console.log(data)
           }
         }
       ]
       
     });
-    console.log(prompt.name)
     prompt.present();
   }
 }

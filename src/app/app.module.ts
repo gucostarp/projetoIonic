@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
+import { LoginPage } from '../pages/login/login';
 import { BadgesPage } from '../pages/badges/badges';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { BadgesPage } from '../pages/badges/badges';
  MyApp,
  HomePage,
  CadastroPage,
+ LoginPage,
  BadgesPage,
  ],
  imports: [
@@ -24,6 +26,7 @@ import { BadgesPage } from '../pages/badges/badges';
   MyApp,
   HomePage,
   CadastroPage,
+  LoginPage,
   BadgesPage,
  
   ],
