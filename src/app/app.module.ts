@@ -7,14 +7,16 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
+import { LoggedPage } from '../pages/logged/logged';
 import { BadgesPage } from '../pages/badges/badges';
 
 @NgModule({
  declarations: [
+ CadastroPage,
  MyApp,
  HomePage,
- CadastroPage,
  LoginPage,
+ LoggedPage,
  BadgesPage,
  ],
  imports: [
@@ -23,10 +25,11 @@ import { BadgesPage } from '../pages/badges/badges';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+  CadastroPage,
   MyApp,
   HomePage,
-  CadastroPage,
   LoginPage,
+  LoggedPage,
   BadgesPage,
  
   ],

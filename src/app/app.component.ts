@@ -23,7 +23,6 @@ SplashScreen) {
  });
  this.pages = [
 
- { title: 'Home', component: HomePage },
  { title: 'Cadastro', component: CadastroPage },
  { title: 'Login', component: LoginPage },
  { title: 'Badges', component: BadgesPage },

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { LoggedPage } from '../logged/logged';
 
 
 /**
@@ -19,13 +20,32 @@ export class LoginPage {
 login: string = '';
 senha: string = '';
 mensagem: string ='';
+loginok = 'gustavo';
+senhaok = '123';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+  }
+  showAlert() {
+    const alert = this.alertCtrl.create({
+      title: 'ERRO!',
+      subTitle: 'Usuário ou senha inválidos!',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
   enviar(campoLogin, campoSenha){
+    if (campoLogin == this.loginok && campoSenha == this.senhaok){
     this.login = campoLogin;
     this.senha = campoSenha;
     this.mensagem = 'Seus dados foram enviados!';
-    }
+
+    this.navCtrl.push(LoggedPage)
+
+
+    } else this.showAlert();
+    
+  }
 }
+    
+

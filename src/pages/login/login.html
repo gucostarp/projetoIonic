@@ -14,11 +14,9 @@
  [(ngModel)]="campoSenha"></ion-input>
   </ion-item>
   </ion-list>
-  <button ion-button (click)="enviar(campoLogin, campoSenha)"
- outline>Enviar</button>
-  <p>{{campoLogin}}</p>
-
-<p>{{mensagem}}</p>
+  <button ion-button round (click)="enviar(campoLogin, campoSenha)">Enviar</button>
+  
+<p> {{mensagem}} </p>
 </ion-content>
 <ion-footer>
   <ion-toolbar color="secondary">

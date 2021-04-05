@@ -49,8 +49,8 @@ export class CadastroPage {
         {
           text: 'Salvar',
           handler: data => {
-            this.mail = 'Email:' + data.email;
-            this.fone = 'Fone:' + data.telefone;
+            this.mail = 'E-mail:' + data.email;
+            this.fone = 'Telefone:' + data.telefone;
             console.log(data)
           }
         }
